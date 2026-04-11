@@ -26,7 +26,7 @@ const Index = () => {
         slightly visible below the Hero on most viewports.
         Adjust -mt-16 / -mt-24 to taste.
       */}
-      <div className="-mt-20 sm:-mt-24 relative z-20">
+      <div className="-mt-32 sm:-mt-40 relative z-20">
         <Features />
       </div>
 
