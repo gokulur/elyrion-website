@@ -1,37 +1,36 @@
+
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
+import Testimonials from '@/components/Testimonials';
+import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
+import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import useScrollAnimation from '@/utils/useScrollAnimation';
 
 const Index = () => {
+  // Initialize scroll animations
   useScrollAnimation();
 
+  // Set page title
   useEffect(() => {
     document.title = "ELYRION | Web Development, Cyber Security & Systems Engineering";
   }, []);
-
+  
   return (
-    // scroll-smooth enables CSS smooth scrolling for anchor links
-    <div className="min-h-screen overflow-x-hidden scroll-smooth">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <Hero />
-
-      {/*
-        Peek wrapper: negative margin pulls Features up so it's
-        slightly visible below the Hero on most viewports.
-        Adjust -mt-16 / -mt-24 to taste.
-      */}
-      <div className="-mt-32 sm:-mt-40 relative z-20">
-        <Features />
-      </div>
-
+      <Features />
       <HowItWorks />
+      {/* <Testimonials /> */}
+      {/* <Pricing /> */}
       <FAQ />
+      {/* <CTA /> */}
       <Footer />
       <ScrollToTop />
     </div>
