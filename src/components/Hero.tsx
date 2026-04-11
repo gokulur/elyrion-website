@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[80vh] sm:min-h-[85vh] flex flex-col justify-center overflow-visible bg-gradient-hero hero-glow pb-16 sm:pb-24">
+    <section className="relative min-h-[65vh] sm:min-h-[70vh] flex flex-col justify-center overflow-visible bg-gradient-hero hero-glow pb-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-10 w-56 h-56 sm:w-72 sm:h-72 bg-crypto-purple/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
